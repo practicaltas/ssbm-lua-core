@@ -16,6 +16,19 @@ or
 
 then use the core functions with `core.getRngSeed()` etc.
 
+### Adding Screen Text
+
+To print the info text to your screen, add the following to your `.lua` file:
+
+```
+text = core.getScreenText()
+--optional: add more lines: text = text .. string.format("This is an integer: %d\n", someInteger)
+--optional: add even more lines, etc.: text = text .. string.format("This integer is being displayed as an 8-digit padded hex number: 0x%08x\n", someInteger)
+SetScreenText(text)
+```
+		
+### Adding new functions
+
 If you want to add new functions, you need to make sure to include the line
 
 `core.functionName = functionName`
