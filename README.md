@@ -16,6 +16,8 @@ or
 
 then use the core functions with `core.getRngSeed()` etc.
 
+A sample script has been added to `Sys/Scripts` which runs Pichu's BTT TAS WR (in both NTSC and PAL). It uses the core to make sure it only executes during Pichu's BTT, so you can leave it running and it'll only kick in after you start the run. This file uses a weird-looking format because I generated it with a separate Python script (since don't like writing long Lua scripts).
+
 ### Adding Screen Text
 
 To print the info text to your screen, add the following to your `.lua` file:
